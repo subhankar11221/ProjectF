@@ -5,49 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+   
+     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image" href="./titlelogo.jpg">
 </head>
 <body>
-    <div class="container">
-        <div class="box">
-
-            <div class="control">
-                <p id="login">LOGIN</p>
-                <p id="signUp">SIGN UP</p>
-            </div>
-
-            <span id="bar"></span>
-
-            <div class="loginBox" id="loginBox">
-                <input type="text" name="name" id="name" placeholder="Enter your name">
-                <input type="email" name="email" id="email" placeholder="Enter your email">
-                <input type="password" name="password" id="password" placeholder="Enter your password">
-                <br><br><br>
-
-                <button type="submit">LOGIN</button>
-                
-
-                <div class="dontHave" id="signUp2">
-                    <p>Don't have account?</p>
-                    <p>Sign Up Now</p>
-                </div>
-            </div>
-            <div class="signUpBox" id="signUpBox">
-                <input type="text" name="name" id="name" placeholder="Enter your name">
-                <input type="text" name="dob" id="dob" placeholder="Enter your DOB (DD/MM/YYYY)">
-                <input type="email" name="email" id="email" placeholder="Enter your email">
-                <input type="password" name="password" id="password" placeholder="Enter your password">
-                <br><br><br>
-
-                <button>SIGN UP</button>
-
-                <div class="dontHave" id="login2">
-                    <p>Have account?</p>
-                    <p>Login Now</p>
-                </div>
-            </div>
-
+    
+  <div class="center">
+    <h1>User login</h1>
+    <form action="data.html" method="post">
+        <div class="text-field">
+            <input type="text" required placeholder="Enter username">
         </div>
-    </div>
+        <div class="text-field">
+            <input type="password" required placeholder="Enter password">
+        </div>
+        <div class="pass">Forgot password?</div>
+        <input type="submit" value="Login">
+        <div class="signup_link">
+            Don't have an account?<a href="#">sign-up</a>
+        </div>
+    </form>
+
+  </div>
+    
 </body>
 </html>
